@@ -9,30 +9,38 @@ body{
     background: #9DA2A1;
 }
 .container{
-    width: 360px;
-    height: 500px;
-    margin: 6% auto;
+    width: 38vw;
+    height: 90vh;
+    margin: 2% auto;
     background: var(--theme_color2);
     border-radius: 5px;
     border: 1px solid black;
     position: relative;
+    padding: 0.2rem;
     /* overflow: hidden; */
 }
 
-.conatiner h3{
+.container h3{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 0.8rem;
     color:var(--font);
-    
+    border: 1px solid red;
+}
+.container h2{
+    text-align: center;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    color:var(--font);
+    border: 1px solid red;
 }
 
-.conatiner form{
-    background: var(--theme_color1);
-    width: 280px;
+.container form{
+    width: 70vh;
+    height: 85vh;
     position: absolute;
     border: 1px solid red;
-    top: 190px;
-    left: 40px;
+    padding: 0.3rem;
+    padding-top: 2rem;
     transition: 0.5s;
 
 }
@@ -109,20 +117,13 @@ form button{
 
 /* ifo icon closing */
 
-#form2{
-    left: 450px;
-    
-}
-
-#form3{
-    left: -450px;
-
+#form2, #form3, #form4, #form5{
+    left: 30rem; 
 }
 
 .step_row{
-    width: 360px;
-    height: 40px;
-    margin: 0 auto;
+    width: 100%;
+    height: 2rem;
     display: flex;
     align-items: center ;
     box-shadow: 0 -1px 5px -1px #000;
@@ -130,7 +131,7 @@ form button{
 }
 
 .step_col{
-    width: 120px;
+    flex: 1;
     text-align: center;
     color: #333;
     position: relative;
@@ -140,7 +141,6 @@ form button{
 #progress{
     position: absolute;
     height: 100% ;
-    width: 90px;
     background: #1e90ff;
     transition: 1s;
 }
@@ -149,10 +149,8 @@ form button{
     content: '';
     height: 0;
     width: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
     position: absolute;
-    right: -20px;
+    /* right: -20px; */
     top:0;
-    border-left: 20px solid #1e90ff;
+    
 }

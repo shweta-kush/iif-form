@@ -51,65 +51,36 @@
             <h3>START-UP COMPANY EVALUATION SHEET</h3>
             <h2>Startup Details</h2>
             <label for="">What is the stage of your startup</label>
-            
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">Ideation Stage</label><br>
-
-            <input type="radio" id="No" name="stage" value="idee">
-            <label for="No">Prototype Stage (PoC i.e. Proof of Concept Validated)</label><br>
-
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">MVP Stage i.e. Minimum Viable Product/ Proposition (Pre-Revenue)
-            </label><br>
-
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">Seed Stage (Early Revenue)
-            </label><br>
-
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">Product Market Fit (Validation Stage)
-            </label><br>
-
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">Go-to-Market Stage (Scale-up)
-            </label>
-
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">Growth Stage (Expansion)</label>
-            
+            <select id="stage_of_startup">
+                <option value="apple">Ideation Stage</option>
+                <option value="banana">Prototype Stage (PoC i.e. Proof of Concept Validated</option>
+                <option value="cherry">MVP Stage i.e. Minimum Viable Product/ Proposition (Pre-Revenue)</option>
+                <option value="date">Seed Stage (Early Revenue)</option>
+                <option value="grape">Product Market Fit (Validation Stage)</option>
+                <option value="grape">Go-to-Market Stage (Scale-up)</option>
+                <option value="grape">Growth Stage (Expansion)</option>
+            </select>
 
             <br><label for="">Business Type:</label>
-            
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">B2C i.e. Business to Consumer</label>
-
-            <input type="radio" id="No" name="stage" value="idee">
-            <label for="No">B2B i.e. Business to Business</label>
-
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">B2G i.e. Business to Government
-            </label>
-
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">D2C i.e. Direct to Consumer
-            </label><br>
+            <select id="Business_type">
+                <option value="apple">B2C i.e. Business to Consumer</option>
+                <option value="banana">B2B i.e. Business to Business</option>
+                <option value="cherry">B2G i.e. Business to Government</option>
+                <option value="cherry">D2C i.e. Direct to Consumer</option>
+            </select>
 
             <br><label for="">Is your product/service a </label>
-            
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">Nice to Have</label>
-
-            <input type="radio" id="No" name="stage" value="idee">
-            <label for="No">Must Have</label>
+            <select id="Business_type">
+                <option value="apple">Nice to Have</option>
+                <option value="banana">Must Have</option>
+            </select>
 
 
             <br><label for="">Is your solution: </label>
-            
-            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
-            <label for="Yes">Globally Scalable Solution</label>
-
-            <input type="radio" id="No" name="stage" value="idee">
-            <label for="No">Only for Indian Audience</label>
+            <select id="Business_type">
+                <option value="apple">Globally Scalable Solution</option>
+                <option value="banana">Only for Indian Audience</option>
+            </select>
 
             
 
@@ -119,7 +90,7 @@
                 <button type="button" id="next3">Next</button>
             </div>
 
-        </form>
+        </form> 
 
 
         <form action="" id="form4">
@@ -135,15 +106,38 @@
             <input type="text" id="inputField" name="inputField" placeholder="What are your Unit Economics?">
             <div class="info-icon" title="(e.g. How much does it cost to make your solution and how much are you selling it for?)"><i class="fas fa-info-circle"></i></div>
             </div>
-
-
-
-
-            
            
             <div class="btn_next">
                 <button type="button" id="back3">Back</button>
                 <button type="button" id="next4">Next</button>
+            </div>
+
+        </form>
+
+
+        <form action="" id="form5">
+            <h3>START-UP COMPANY EVALUATION SHEET</h3>
+            <h2>Startup Details</h2>
+            <label for="">Is the product defensible or patentable?</label>
+            <select id="patentable">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <input type="text" name="" id="member_name" placeholder="Are there any large companies in this domain having a significant hold on this market? if yes, name them:">
+            <input type="text" name="" id="member_name" placeholder="Mention the uniqueness of your team members and what role do they play in scaling up your business.">
+            <input type="text" name="" id="member_name" placeholder="How much funds are you seeking from NSUT IIF and how do you plan on utilizing those funds?">
+            <label for="presentation">Share your company presentation:</label><input type="file" id="presentation" name="presentation">
+            <label for="">Have you prepared a business model/financial model?</label>
+            <select id="Business_model">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <br><label for="cash_flow_statement">If yes, attach your cash flow statement and projected sales sheet:</label><input type="file" id="cash_flow_statement" name="cash_flow_statement">
+           
+            <div class="btn_next">
+                <button type="button" id="back4">Back</button>
+                <button type="submit" id="next5">Submit</button>
             </div>
 
         </form>
@@ -154,9 +148,13 @@
             <div class="step_col">Step 2</div>
             <div class="step_col">Step 3</div>
             <div class="step_col">Step 4</div>
+            <div class="step_col">Step 5</div>
         </div>
 
 
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
