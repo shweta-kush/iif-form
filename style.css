@@ -1,0 +1,158 @@
+
+:root {
+    --theme_color1: #1e90ff;
+    --theme_color2: #ffffff;
+    --font: black;
+  }
+
+body{
+    background: #9DA2A1;
+}
+.container{
+    width: 360px;
+    height: 500px;
+    margin: 6% auto;
+    background: var(--theme_color2);
+    border-radius: 5px;
+    border: 1px solid black;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.conatiner h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color:var(--font);
+    
+}
+
+.conatiner form{
+    background: var(--theme_color1);
+    width: 280px;
+    position: absolute;
+    border: 1px solid red;
+    top: 190px;
+    left: 40px;
+    transition: 0.5s;
+
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+}
+
+::placeholder{
+    color: #1e90ff;
+}
+
+.btn_next{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: var(--font);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+/* info icon */
+.input-container {
+    position: relative;
+  }
+  
+  .info-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .info-icon::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .info-icon:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+/* ifo icon closing */
+
+#form2{
+    left: 450px;
+    
+}
+
+#form3{
+    left: -450px;
+
+}
+
+.step_row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center ;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step_col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+
+}
+
+#progress{
+    position: absolute;
+    height: 100% ;
+    width: 90px;
+    background: #1e90ff;
+    transition: 1s;
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top:0;
+    border-left: 20px solid #1e90ff;
+}

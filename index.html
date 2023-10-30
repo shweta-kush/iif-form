@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form1">
+            <h3>START-UP COMPANY EVALUATION SHEET</h3>
+            <p>Carefully answer all the questions below. Your company's potential will be evaluated based on your answers.</p>
+
+            <input type="text" name="" id="Team_name" placeholder="Startup/Team name" required>
+            <input type="mail" name="" id="mail" placeholder="leader's Email" required>
+            <input type="number" name="" id="mob_number" placeholder="leader's Number" required>
+
+            <label for="company_registered">Is your Company registered?</label required>
+            <input type="radio" id="yes" name="company_registered" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="company_registered" value="No">
+            <label for="No">No</label>
+            <input type="text" placeholder="Enter your NSUT Roll Number" required>
+
+            <div class="btn_next">
+                <button type="button" id="next1">Next</button>
+            </div>
+
+        </form>
+
+
+        <form action="" id="form2">
+            <h3>START-UP COMPANY EVALUATION SHEET</h3>
+            <h2>Team Details</h2>
+            <label for="">Details of all Team Members</label>
+            <input type="text" name="" id="member_name" placeholder="Team member name">
+            
+           
+            <div class="btn_next">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+
+        </form>
+
+        <form action="" id="form3">
+            <h3>START-UP COMPANY EVALUATION SHEET</h3>
+            <h2>Startup Details</h2>
+            <label for="">What is the stage of your startup</label>
+            
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">Ideation Stage</label><br>
+
+            <input type="radio" id="No" name="stage" value="idee">
+            <label for="No">Prototype Stage (PoC i.e. Proof of Concept Validated)</label><br>
+
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">MVP Stage i.e. Minimum Viable Product/ Proposition (Pre-Revenue)
+            </label><br>
+
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">Seed Stage (Early Revenue)
+            </label><br>
+
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">Product Market Fit (Validation Stage)
+            </label><br>
+
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">Go-to-Market Stage (Scale-up)
+            </label>
+
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">Growth Stage (Expansion)</label>
+            
+
+            <br><label for="">Business Type:</label>
+            
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">B2C i.e. Business to Consumer</label>
+
+            <input type="radio" id="No" name="stage" value="idee">
+            <label for="No">B2B i.e. Business to Business</label>
+
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">B2G i.e. Business to Government
+            </label>
+
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">D2C i.e. Direct to Consumer
+            </label><br>
+
+            <br><label for="">Is your product/service a </label>
+            
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">Nice to Have</label>
+
+            <input type="radio" id="No" name="stage" value="idee">
+            <label for="No">Must Have</label>
+
+
+            <br><label for="">Is your solution: </label>
+            
+            <input type="radio" id="Ideation" name="stage" value="Ideation Stage">
+            <label for="Yes">Globally Scalable Solution</label>
+
+            <input type="radio" id="No" name="stage" value="idee">
+            <label for="No">Only for Indian Audience</label>
+
+            
+
+           
+            <div class="btn_next">
+                <button type="button" id="back2">Back</button>
+                <button type="button" id="next3">Next</button>
+            </div>
+
+        </form>
+
+
+        <form action="" id="form4">
+            <h3>START-UP COMPANY EVALUATION SHEET</h3>
+            <h2>Startup Details</h2>
+            <input type="text" name="" id="member_name" placeholder="What is the problem you are trying to solve?">
+            <input type="text" name="" id="member_name" placeholder="Briefly explain your idea in less than 500 characters.">
+            <input type="text" name="" id="member_name" placeholder="In what ways is your solution better than the available alternatives, i.e., is it cheaper, easier, or faster, etc.?">
+            <input type="text" name="" id="member_name" placeholder="What is the total market size of your targeted sector?">
+            <input type="text" name="" id="member_name" placeholder="What is your Go-To-Market strategy?">
+            <input type="text" name="" id="member_name" placeholder="How do you plan on acquiring customer and have you figured out your customer acquisition cost (CAC)?">
+            <div class="input-container">
+            <input type="text" id="inputField" name="inputField" placeholder="What are your Unit Economics?">
+            <div class="info-icon" title="(e.g. How much does it cost to make your solution and how much are you selling it for?)"><i class="fas fa-info-circle"></i></div>
+            </div>
+
+
+
+
+            
+           
+            <div class="btn_next">
+                <button type="button" id="back3">Back</button>
+                <button type="button" id="next4">Next</button>
+            </div>
+
+        </form>
+
+        <div class="step_row">
+            <div id="progress"></div>
+            <div class="step_col">Step 1</div>
+            <div class="step_col">Step 2</div>
+            <div class="step_col">Step 3</div>
+            <div class="step_col">Step 4</div>
+        </div>
+
+
+    </div>
+</body>
+</html>
