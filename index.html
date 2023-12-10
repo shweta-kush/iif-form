@@ -13,18 +13,23 @@
     <div class="container">
         <form action="" id="form1">
             <h3>START-UP COMPANY EVALUATION SHEET</h3>
-            <p>Carefully answer all the questions below. Your company's potential will be evaluated based on your answers.</p>
+            <p >Carefully answer all the questions below. Your company's potential will be evaluated based on your answers.</p>
 
             <input type="text" name="" id="Team_name" placeholder="Startup/Team name" required>
             <input type="mail" name="" id="mail" placeholder="leader's Email" required>
             <input type="number" name="" id="mob_number" placeholder="leader's Number" required>
-
-            <label for="company_registered">Is your Company registered?</label required>
-            <input type="radio" id="yes" name="company_registered" value="Yes">
-            <label for="Yes">Yes</label><br>
-            <input type="radio" id="No" name="company_registered" value="No">
-            <label for="No">No</label>
-            <input type="text" placeholder="Enter your NSUT Roll Number" required>
+            <div class="registered">
+                <br><label for="company_registered">Is your Company registered?</label required>
+                <div class="option">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="yes" name="company_registered" value="Yes">
+                </div>
+                <div class="option">
+                    <label for="No">No</label>
+                    <input type="radio" id="No" name="company_registered" value="No">
+                </div>
+            </div>
+            <br><input type="text" placeholder="Enter your NSUT Roll Number" required>
 
             <div class="btn_next">
                 <button type="button" id="next1">Next</button>
@@ -36,10 +41,19 @@
         <form action="" id="form2">
             <h3>START-UP COMPANY EVALUATION SHEET</h3>
             <h2>Team Details</h2>
-            <label for="">Details of all Team Members</label>
-            <input type="text" name="" id="member_name" placeholder="Team member name">
-            
-           
+            <label for="add-team-member" style="display: flex; align-items: center;">
+                Details of all Team Members
+                <i class="fas fa-plus" id="add-member-icon" style="cursor: pointer;"></i>
+            </label>
+    
+            <div id="team-members">
+                <div class="team-member">
+                    <input type="text" name="member_name" placeholder="Team member name">
+                    <input type="number" name="member_number" placeholder="Team member mobile number">
+                    <input type="email" name="member_email" placeholder="Team member email id">
+                </div>
+            </div>
+    
             <div class="btn_next">
                 <button type="button" id="back1">Back</button>
                 <button type="button" id="next2">Next</button>
@@ -82,6 +96,12 @@
                 <option value="banana">Only for Indian Audience</option>
             </select>
 
+            <br><label for="">Is the product defensible or patentable?</label>
+            <select id="patentable">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
             
 
            
@@ -101,7 +121,7 @@
             <input type="text" name="" id="member_name" placeholder="In what ways is your solution better than the available alternatives, i.e., is it cheaper, easier, or faster, etc.?">
             <input type="text" name="" id="member_name" placeholder="What is the total market size of your targeted sector?">
             <input type="text" name="" id="member_name" placeholder="What is your Go-To-Market strategy?">
-            <input type="text" name="" id="member_name" placeholder="How do you plan on acquiring customer and have you figured out your customer acquisition cost (CAC)?">
+            <input type="text" name="" id="member_name" placeholder="How do you plan on acquiring customer and have you figured out your CAC?">
             <div class="input-container">
             <input type="text" id="inputField" name="inputField" placeholder="What are your Unit Economics?">
             <div class="info-icon" title="(e.g. How much does it cost to make your solution and how much are you selling it for?)"><i class="fas fa-info-circle"></i></div>
@@ -118,22 +138,22 @@
         <form action="" id="form5">
             <h3>START-UP COMPANY EVALUATION SHEET</h3>
             <h2>Startup Details</h2>
-            <label for="">Is the product defensible or patentable?</label>
-            <select id="patentable">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
+            
 
-            <input type="text" name="" id="member_name" placeholder="Are there any large companies in this domain having a significant hold on this market? if yes, name them:">
-            <input type="text" name="" id="member_name" placeholder="Mention the uniqueness of your team members and what role do they play in scaling up your business.">
+            <input type="text" name="" id="member_name" placeholder="Are there any large companies in this domain having a significant hold?">
+            <input type="text" name="" id="member_name" placeholder="Mention the uniqueness of your team members and what role do they play?.">
             <input type="text" name="" id="member_name" placeholder="How much funds are you seeking from NSUT IIF and how do you plan on utilizing those funds?">
-            <label for="presentation">Share your company presentation:</label><input type="file" id="presentation" name="presentation">
-            <label for="">Have you prepared a business model/financial model?</label>
-            <select id="Business_model">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-            <br><label for="cash_flow_statement">If yes, attach your cash flow statement and projected sales sheet:</label><input type="file" id="cash_flow_statement" name="cash_flow_statement">
+            <div class="buz_ppt">
+                <label for="presentation">Share your company presentation:</label><input style="height: 0.6rem;" type="file" id="presentation" name="presentation">
+        </div>
+            <div class="buz_model">
+                <label for="">Have you prepared a business model/financial model?</label><br>
+                <select id="Business_model">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <br><br><label for="cash_flow_statement">If yes, attach your cash flow statement and projected sales sheet:</label><input type="file" id="cash_flow_statement" name="cash_flow_statement">
            
             <div class="btn_next">
                 <button type="button" id="back4">Back</button>

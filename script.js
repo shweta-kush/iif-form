@@ -60,4 +60,17 @@ back4.onclick= function(){
     progress.style.width="22.8vw";
 }
 
+// add member
+const addMemberIcon = document.getElementById('add-member-icon');
+        const teamMembersContainer = document.getElementById('team-members');
+
+        addMemberIcon.addEventListener('click', function() {
+            const newTeamMember = document.createElement('div');
+            newTeamMember.innerHTML = `
+                <input type="text" name="member_name" placeholder="Team member name">
+                <input type="number" name="member_number" placeholder="Team member mobile number">
+                <input type="email" name="member_email" placeholder="Team member email id">
+            `;
+            teamMembersContainer.appendChild(newTeamMember);
+        });
 
